@@ -5,8 +5,7 @@ from log import get_4f_logger
 BASE_DIR = dirname(dirname(__file__))
 
 
-def debug_log():
-    return get_4f_logger(__name__, join(BASE_DIR, 'log'), 'INFO')
+debug_log = get_4f_logger(__name__, join(BASE_DIR, 'log'), 'INFO')
 
 
 if __name__ == "__main__":
